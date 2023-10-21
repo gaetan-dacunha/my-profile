@@ -1,0 +1,110 @@
+/* Réinitialisation des styles par défaut du navigateur */
+body, h1, h2, p, ul {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #1a1a1a; /* Couleur de fond sombre */
+    color: #fff; /* Couleur du texte clair */
+    line-height: 1.6;
+    text-align: center; /* Alignement du texte au centre */
+}
+
+header {
+    padding: 20px;
+    background-color: #333; /* Couleur de fond pour l'en-tête */
+}
+
+h1 {
+    color: #ff9900; /* Couleur orange pour le titre principal */
+}
+
+img {
+    border-radius: 50%; /* Pour une photo de profil arrondie */
+    max-width: 10%;
+    height: auto;
+    border: 5px solid #ff9900; /* Bordure orange autour de la photo de profil */
+    margin: 20px auto; /* Centrer la photo de profil */
+}
+
+p {
+    margin-bottom: 20px;
+}
+
+section {
+    margin: 20px auto; /* Centrer les sections */
+    max-width: 600px; /* Limiter la largeur de la section */
+}
+
+h2 {
+    color: #ff9900; /* Couleur orange pour les sous-titres */
+}
+
+ul {
+    list-style: none;
+}
+
+ul li {
+    margin-bottom: 10px;
+}
+
+a {
+    text-decoration: none;
+    color: #ff9900; /* Couleur orange pour les liens */
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+/* Réseaux sociaux - Utilisation d'icônes FontAwesome (ajoutez le lien vers le CDN dans le HTML) */
+ul li i {
+    margin-right: 10px;
+}
+
+/* Couleurs spécifiques pour les icônes de réseaux sociaux */
+.fa-facebook-f {
+    color: #3b5998;
+}
+
+.fa-linkedin-in {
+    color: #0077b5;
+}
+
+.fa-twitter {
+    color: #1da1f2;
+}
+
+/* Media Queries pour rendre la page responsive */
+
+/* Pour une largeur d'écran < 960px */
+@media (max-width: 960px) {
+    header {
+        padding: 10px;
+    }
+    section {
+        max-width: 500px;
+    }
+}
+
+/* Pour une largeur d'écran < 720px */
+@media (max-width: 720px) {
+    img {
+        max-width: 80%;
+    }
+    section {
+        max-width: 300px;
+    }
+}
+
+/* Pour une largeur d'écran < 540px */
+@media (max-width: 540px) {
+    img {
+        max-width: 100%;
+    }
+    section {
+        max-width: 100%;
+    }
+}
